@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #tmenu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #top {
+            background-color: black;
+            /* display: inline-block; */
+        }
+
+        .menu {
+            width: auto;
+            padding: 1px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .hamburger {
+            box-sizing: border-box;
+            background-color: white;
+            border: 1px solid white;
+            cursor: pointer;
+            width: 30px;
+            height: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .hamburger span {
+            border-color: white;
+            display: block;
+            height: 4px;
+            /* 막대의 두께 */
+            width: 100%;
+            background-color: #000;
+            /* 검정색 또는 원하는 색상 */
+            border-radius: 2px;
+            /* 모서리 둥글게 */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="top">
+            <div class="hamburger" onclick="toggleMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="tmenu">
+                <li class="menu">
+                    <a href="#">header</a>
+                </li>
+                <li class="menu">
+                    <a href="#">nav</a>
+                </li>
+                <li class="menu">
+                    <a href="#">aside</a>
+                </li>
+                <li class="menu">
+                    <a href="#">section</a>
+                </li>
+                <li class="menu">
+                    <a href="#">article</a>
+                </li>
+                <li class="menu">
+                    <a href="#">footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
