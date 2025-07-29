@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>연습문제</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        body > .non-flex {
+            display: block;
+        }
+
+        .container {
+            width: 600px;
+            height: 500px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin: 20px;
+        }
+
+        .container>div {
+            border: 1px solid #222;
+            text-align: center;
+        }
+
+        .container>div:nth-child(odd) {
+            background-color: sandybrown;
+        }
+
+        .container>div:nth-child(even) {
+            background-color: tomato;
+        }
+        iframe {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="non-flex">
+        <iframe src="./index0729_01.html" width="700px" height="600px" frameborder="0"></iframe>
+    </div>
+</body>
+
+</html>
