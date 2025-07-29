@@ -4,121 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- 구글 웹폰트 적용 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Dokdo&family=Moirai+One&family=Nanum+Pen+Script&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS 적용 -->
+    <title>심성보 과제방</title>
     <style>
-        
-        h1 {
-            background-color: #FFFADC;
-            color: #333446;
-            height: 100px;
-            line-height: 100px;
+        body {
             text-align: center;
-            font-size: 50px;
+            margin: 0;
         }
 
-        table,
-        tr,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 10px;
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
         }
 
-        .nanum-pen-script-regular {
-            font-family: "Nanum Pen Script", cursive;
-            font-weight: 400;
-            font-style: normal;
+        .days {
+            width: 15em;
+            height: 5em;
         }
+
+        button {
+            width: 100%;
+            height: 100%;
+            background-color: #FAF9EE;
+            font-size: 2em;
+            border: 1px sold black;
+            padding: 0;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        button a {
+            color: black;
+            text-decoration: none;
+        }
+
+        h2 {
+            color: #57564F;
+        }
+        
     </style>
 </head>
 
 <body>
-    <h1>심성보 과제방</h1>
-    <div>
-        <table>
-            <tr>
-                <td>
-                    day01_0716
-                </td>
-                <td>
-                    <a href="./work/day01_0716/index0716_01.html">[ 0716 ]</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    day02_0717
-                </td>
-                <td>
-                    <a href="./work/day02_0717/index0717_01.html">[ 0717 ]</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    day03_0718
-                </td>
-                <td>
-                    <a href="./work/day03_0718/index0718_01.html">[ 0718 ]</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    day04_0721
-                </td>
-                <td>
-                    <a href="./work/day04_0721/index0721_01.html">[ 0721 ]</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    day05_0722
-                </td>
-                <td>
-                    <a href="./work/day05_0722/index0722.html">[ 0722 ]</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    day06_0723
-                </td>
-                <td>
-                    <a href="./work/day06_0723/index0723.html">[ 0723 ]</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    day07_0724
-                </td>
-                <td>
-                    <a href="./work/day07_0724/index0724.html">[ 0724 ]</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    day07_0725
-                </td>
-                <td>
-                    <a href="./work/day08_0725/index0725.html">[ 0725 ]</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    day07_0728
-                </td>
-                <td>
-                    <a href="./work/day09_0728/index0728.html">[ 0728 ]</a>
-                </td>
-            </tr>
-        </table>
-    </div>
+    <header>
+        <h1>나의 과제방</h1>
+    </header>
+    <!-- <nav></nav> -->
+    <section><h2>2025년 7월</h2>
+        <div class="container">
+            <div class="days">
+                <button><a href="./work/day01_0716/index0716_01.html">7월 16일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="./work/day02_0717/index0717_01.html">7월 17일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="./work/day03_0718/index0718_01.html">7월 18일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="./work/day04_0721/index0721_01.html">7월 21일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="./work/day05_0722/index0722.html">7월 22일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="./work/day06_0723/index0723.html">7월 23일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="./work/day07_0724/index0724.html">7월 24일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="./work/day08_0725/index0725.html">7월 25일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="./work/day09_0728/index0728.html">7월 28일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="#">7월 29일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="#">7월 30일</a></button>
+            </div>
+            <div class="days">
+                <button><a href="#">7월 31일</a></button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
