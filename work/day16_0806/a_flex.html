@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        header {
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            position: relative;
+            margin-bottom: 1px;
+        }
+
+        #h_container {
+            display: flex;
+            flex-direction: row;
+            width: 1200px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        #h_1 {
+            width: 12.5%;
+            height: 100px;
+            border-right: 2px dotted black;
+            box-sizing: border-box;
+        }
+
+        #h_2 {
+            width: 75%;
+            height: 100px;
+            box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        #n_container {
+            width: 700px;
+            height: 200px;
+            margin: 0 auto;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 2px solid black;
+        }
+
+        main,
+        section,
+        #s_container {
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+
+        }
+
+        #s_container {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #s_1 {
+            display: flex;
+            flex: 0 0 auto;
+            width: 1200px;
+            height: 300px;
+            border-top: 0px solid black;
+            border-right: 0px solid black;
+            border-bottom: 1px solid black;
+            border-left: 0px solid black;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #s_bottmom {
+            width: 1200px;
+            height: 200px;
+            display: flex;
+            flex: 0 0 auto;
+        }
+
+        #sect1,
+        #sect2,
+        #sect3 {
+            flex: 1;
+            width: 400px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        #sect2 {
+            border-left: 2px dotted black;
+        }
+
+        #sect3 {
+            border-left: 2px dotted black;
+        }
+
+        footer {
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 1px;
+            ;
+        }
+
+        #f_container {
+            display: flex;
+            flex-direction: row;
+            flex: 0 0 auto;
+            align-items: center;
+            width: 1200px;
+            height: 100px;
+            border: 1px solid black;
+            margin-top: 1px;
+        }
+
+        #f_1 {
+            width: 12.5%;
+            height: 100px;
+            border-right: 2px dotted black;
+            box-sizing: border-box;
+            flex: 0 0 auto;
+        }
+
+        #f_2 {
+            width: 75%;
+            height: 100px;
+            box-sizing: border-box;
+            flex: 0 0 auto;
+        }
+
+        #f_3 {
+            width: 12.5%;
+            height: 100px;
+            border-left: 2px dotted black;
+            box-sizing: border-box;
+            flex: 0 0 auto;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu1,
+        #menu2,
+        #menu3,
+        #menu4 {
+            width: 25%;
+            height: 50px;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        #menu1 {
+            border-top: 0px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 0px solid black;
+        }
+
+        #menu2 {
+            border-top: 0px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 0px solid black;
+        }
+
+        #menu3 {
+            border-top: 0px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 0px solid black;
+        }
+
+        #menu4 {
+            border-top: 0px solid black;
+            border-right: 0px solid black;
+            border-bottom: 2px solid black;
+            border-left: 0px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="h_container">
+            <div id="h_1">
+
+            </div>
+            <div id="h_2">
+
+            </div>
+        </div>
+        <nav>
+            <div id="n_container">
+                <div id="menu1">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="menu2">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="menu3">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="menu4">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="s_container">
+                <div id="s_1"></div>
+                <div id="s_bottmom">
+                    <div id="sect1"></div>
+                    <div id="sect2"></div>
+                    <div id="sect3"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="f_container">
+            <div id="f_1"></div>
+            <div id="f_2"></div>
+            <div id="f_3"></div>
+        </div>
+    </footer>
+</body>
+
+</html>

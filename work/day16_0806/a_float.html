@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        header {
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            position: relative;
+            margin-bottom: 1px;
+        }
+
+        #h_container {
+            width: 1200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 0 auto;
+            box-sizing: border-box;
+            margin-bottom: 1px;
+        }
+
+        #h_1 {
+            width: 12.5%;
+            height: 100px;
+            border-right: 2px dotted black;
+            box-sizing: border-box;
+            line-height: 100px;
+            font-size: xx-large;
+        }
+
+        #n_container {
+            width: 700px;
+            height: 200px;
+            margin: 0 auto;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-align: center;
+        }
+
+        #s_container {
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        #s_1 {
+            font-size: xx-large;
+            width: 1200px;
+            height: 300px;
+            border-top: 0px solid black;
+            border-right: 0px solid black;
+            border-bottom: 1px solid black;
+            border-left: 0px solid black;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 180px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        #sect1,
+        #sect2,
+        #sect3 {
+            width: 400px;
+            height: 200px;
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: xx-large;
+            padding-top: 80px;
+        }
+
+        #sect2 {
+            border-left: 2px dotted black;
+        }
+
+        #sect3 {
+            border-left: 2px dotted black;
+        }
+
+        #f_container {
+            width: 1200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 0 auto;
+            box-sizing: border-box;
+            margin-top: 1px;
+        }
+
+        #f_1 {
+            width: 12.5%;
+            height: 100px;
+            border-right: 2px dotted black;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        #f_2 {
+            width: 75%;
+            height: 100px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        #f_3 {
+            width: 12.5%;
+            height: 100px;
+            border-left: 2px dotted black;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        #f_1,
+        #f_2,
+        #f_3 {
+            font-size: xx-large;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu1 {
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+        }
+
+        #menu2 {
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 0px solid black;
+        }
+
+        #menu3 {
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 0px solid black;
+        }
+
+        #menu4 {
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 0px solid black;
+        }
+
+        #menu1,
+        #menu2,
+        #menu3,
+        #menu4 {
+            height: 50px;
+            line-height: 50px;
+            box-sizing: border-box;
+        }
+
+        #menu1:hover,
+        #menu2:hover,
+        #menu3:hover,
+        #menu4:hover,
+        .hover:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #submenu1,
+        #submenu2,
+        #submenu3,
+        #submenu4 {
+            height: 150px;
+            line-height: 150px;
+            box-sizing: border-box;
+        }
+        #submenu1 ul,
+        #submenu2 ul,
+        #submenu3 ul,
+        #submenu4 ul {
+            width: 175px;
+            height: 150px;
+        }
+        #submenu1 ul li,
+        #submenu2 ul li,
+        #submenu3 ul li,
+        #submenu4 ul li {
+            width: 175px;
+            height: 35px;
+            line-height: 35px;
+        }
+
+        #submenu1 {
+            border-top: 0px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+        }
+
+        #submenu2 {
+            border-top: 0px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 0px solid black;
+        }
+
+        #submenu3 {
+            border-top: 0px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 0px solid black;
+        }
+
+        #submenu4 {
+            border-top: 0px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 0px solid black;
+        }
+        .menu {
+            float: left;
+            width: 25%;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="h_container">
+            <div id="h_1">
+                <span style="padding-left: 30px;"><b>로고</b></span>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <nav>
+            <div id="n_container">
+                <div class="menu">
+                    <div id="menu1">
+                        <span><b>MENU-1</b></span>
+                    </div>
+                    <div id="submenu1">
+                        <ul>
+                            <li class="hover"><span>SubMenu-1</span></li>
+                            <li class="hover"><span>SubMenu-2</span></li>
+                            <li class="hover"><span>SubMenu-3</span></li>
+                            <li class="hover"><span>SubMenu-4</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div id="menu2">
+                        <span><b>MENU-2</b></span>.
+                    </div>
+                    <div id="submenu2">
+                        <ul>
+                            <li class="hover"><span>SubMenu-1</span></li>
+                            <li class="hover"><span>SubMenu-2</span></li>
+                            <li class="hover"><span>SubMenu-3</span></li>
+                            <li class="hover"><span>SubMenu-4</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div id="menu3">
+                        <span><b>MENU-3</b></span>
+                    </div>
+                    <div id="submenu3">
+                        <ul>
+                            <li class="hover"><span>SubMenu-1</span></li>
+                            <li class="hover"><span>SubMenu-2</span></li>
+                            <li class="hover"><span>SubMenu-3</span></li>
+                            <li class="hover"><span>SubMenu-4</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div id="menu4">
+                        <span><b>MENU-4</b></span>
+                    </div>
+                    <div id="submenu4">
+                        <ul>
+                            <li class="hover"><span>SubMenu-1</span></li>
+                            <li class="hover"><span>SubMenu-2</span></li>
+                            <li class="hover"><span>SubMenu-3</span></li>
+                            <li class="hover"><span>SubMenu-4</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="s_container">
+                <div id="s_1">
+                    <span><b>이미지 슬라이드</b></span>
+                </div>
+                <div id="sect1">
+                    <span><b>공지사항(C.1) / 갤러리(C.2)</b></span>
+                </div>
+                <div id="sect2">
+                    <span><b>배너(C.3)</b></span>
+                </div>
+                <div id="sect3"><span><b>바로가기(C.4)</b></span></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="f_container">
+            <div id="f_1">
+                <span><b>로고</b></span>
+            </div>
+            <div id="f_2">
+                <span><b>Copyright</b></span>
+            </div>
+            <div id="f_3">
+                <span><b>SNS</b></span>
+            </div>
+        </div>
+    </footer>
+<br>
+    <a href="./a_flex.html">A_flex</a>
+    <br>
+    <a href="./a_grid.html">A_grid</a>
+    <br>
+    <a href="./a_table.html">A_table</a>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        $("#menu1").click(function () {
+            $("#submenu1").slideToggle("slow");
+        })
+        $("#menu2").click(function () {
+            $("#submenu2").slideToggle("slow");
+        })
+        $("#menu3").click(function () {
+            $("#submenu3").slideToggle("slow");
+        })
+        $("#menu4").click(function () {
+            $("#submenu4").slideToggle("slow");
+        })
+    </script>
+</body>
+
+</html>
