@@ -20,6 +20,14 @@
             margin-bottom: 1px;
         }
 
+        main {
+            margin: 0 auto;
+        }
+
+        footer {
+            margin: 0 auto;
+        }
+        
         #h_container {
             width: 1200px;
             height: 100px;
@@ -190,9 +198,11 @@
         #submenu2,
         #submenu3,
         #submenu4 {
+            width: 175px;
             height: 150px;
             line-height: 150px;
             box-sizing: border-box;
+            display: none;
         }
         #submenu1 ul,
         #submenu2 ul,
@@ -216,26 +226,29 @@
             border-bottom: 2px solid black;
             border-left: 2px solid black;
         }
-
+        
         #submenu2 {
             border-top: 0px solid black;
             border-right: 2px solid black;
             border-bottom: 2px solid black;
-            border-left: 0px solid black;
+            border-left: 2px solid black;
         }
 
+        li:hover {
+            box-sizing: border-box;
+        }
         #submenu3 {
             border-top: 0px solid black;
             border-right: 2px solid black;
             border-bottom: 2px solid black;
-            border-left: 0px solid black;
+            border-left: 2px solid black;
         }
 
         #submenu4 {
             border-top: 0px solid black;
             border-right: 2px solid black;
             border-bottom: 2px solid black;
-            border-left: 0px solid black;
+            border-left: 2px solid black;
         }
         .menu {
             float: left;
@@ -344,13 +357,6 @@
             </div>
         </div>
     </footer>
-<br>
-    <a href="./a_flex.html">A_flex</a>
-    <br>
-    <a href="./a_grid.html">A_grid</a>
-    <br>
-    <a href="./a_table.html">A_table</a>
-
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script>
         $("#menu1").click(function () {
@@ -365,6 +371,7 @@
         $("#menu4").click(function () {
             $("#submenu4").slideToggle("slow");
         })
+
     </script>
 </body>
 
